@@ -1,0 +1,91 @@
+.valid {
+    background-color: white;
+    border: 1px solid darkgrey;
+}
+
+.invalid {
+    background-color: white;
+    color: red;
+    border: 2px solid darkgrey;
+}
+
+/*//attribute selector*/
+input[type="text"] {
+    font-size: 1.4em;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+img {
+    background-image: url(http://i67.tinypic.com/2cr61a9.jpg);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+body {
+
+
+background: #4568DC; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #4568DC , #B06AB3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #4568DC , #B06AB3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px #4568DC;
+
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #4568DC;
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 2px magenta;
+}
+
+
+.heart {
+  width: 100px;
+  height: 100px;
+  margin-top: 855px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
